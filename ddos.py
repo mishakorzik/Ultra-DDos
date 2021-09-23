@@ -8,10 +8,10 @@ G = '\033[32m'
 C = '\033[36m'
 W = '\033[0m'
 
-sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock0 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
 bytes = random._urandom(50)

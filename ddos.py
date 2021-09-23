@@ -1,5 +1,3 @@
-# modules
-
 import sys
 import os
 import time
@@ -17,9 +15,9 @@ bytes = random._urandom(1490)
 
 try:
    os.system("clear")
-   os.system("bash src/logo.sh")
+   os.system("python src/logo.py")
    ip = raw_input("While IP Target : ")
-   port = input("While Port : ")
+   port = input("While the Port : ")
    os.system("python3 src/Starter.py")
 except SyntaxError:
       print(R + '[-] ' + C + 'Error code: 422 Unprocessable Entity')

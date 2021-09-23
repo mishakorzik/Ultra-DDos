@@ -1,4 +1,6 @@
 # modules
+
+import logo
 import sys
 import os
 import time

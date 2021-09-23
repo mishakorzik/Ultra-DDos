@@ -23,7 +23,7 @@ os.system("clear")
 os.system("bash logo.sh")
 ip = raw_input("While IP Target : ")
 port = input("While Port : ")
-os.system("python3 src/starter.py")
+os.system("python3 src/Starter.py")
 
 sent = 0
 while True:

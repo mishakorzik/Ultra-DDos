@@ -25,7 +25,7 @@ bytes = random._urandom(1490)
 
 try:
    os.system("clear")
-   os.system("bash logo.sh")
+   os.system("bash src/logo.sh")
    ip = raw_input("While IP Target : ")
    port = input("While Port : ")
    os.system("python3 src/Starter.py")

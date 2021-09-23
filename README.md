@@ -10,6 +10,5 @@ Ultra DDos in a python script online ddos!
 
 #### Finished you have successfully downloaded Ultra-DDos now to launch!
 
-* `cd`
 * `cd Ultra-DDos`
 * `python2 ddos.py`

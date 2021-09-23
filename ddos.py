@@ -60,6 +60,14 @@ try:
 
 except KeyboardInterrupt:
       print('\n' + R + '[!]' + C + ' Keyboard Interrupt! Terminaling...' + W)
+      
 except socket.gaierror:
       print(R + '[-] ' + C + 'No address associated with hostname! Unknown Adress')
       print(R + '[-] ' + C + 'please write the working IP address!')
+      
+except NameError:
+      print(R + '[-] ' + C + 'No address associated with hostname! Unknown Adress')
+      print(R + '[-] ' + C + 'please write the working IP address!')
+      
+      
+      

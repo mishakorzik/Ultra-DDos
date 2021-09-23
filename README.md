@@ -3,8 +3,8 @@ Ultra DDos in a python script online ddos!
 
 ### Installing
 
-* `pkg update && apt update`
-* `pkg upgrade && apt upgrade`
+* `pkg update`
+* `pkg upgrade`
 * `pkg install git `
 * `git clone https://github.com/mishakorzik/Ultra-DDos`
 

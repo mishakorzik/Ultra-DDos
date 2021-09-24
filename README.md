@@ -46,6 +46,7 @@
 ```
 Root   : No Root
 Storage: 34 MB
+Package: 154 MB
 Wifi   : True
 ```
 

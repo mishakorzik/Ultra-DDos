@@ -14,8 +14,8 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
-bytes = random._urandom(60000)
-bytes1 = random._urandom(250)
+bytes = random._urandom(1000)
+bytes1 = random._urandom(1200)
 
 try:
    os.system("clear")

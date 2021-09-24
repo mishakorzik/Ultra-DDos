@@ -29,7 +29,10 @@
 
 * `pkg update`
 * `pkg upgrade`
-* `pkg install git `
+* `pkg install git`
+* `apt install python`
+* `apt install python2`
+* `apt install python3`
 * `git clone https://github.com/mishakorzik/Ultra-DDos`
 
 #### Finished you have successfully downloaded Ultra-DDos now to launch!

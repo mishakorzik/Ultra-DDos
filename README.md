@@ -51,3 +51,41 @@ Wifi   : True
 
 **If you want to donate, click on the button**
 <a href="https://www.donationalerts.com/r/misha_korzhik"><img title="Donate" src="https://img.shields.io/badge/Donate-UltraDDos-yellow?style=for-the-badge&logo=github"></a>
+
+
+-------
+
+## Find Me 
+[![Github](https://img.shields.io/badge/Reddit-MishaKorzhik-red?style=for-the-badge&logo=reddit)](https://www.reddit.com/u/Necessary_Mammoth368?utm_medium=android_app&utm_source=share)
+[![Github](https://img.shields.io/badge/TELEGRAM-MishaKorzhik-orange?style=for-the-badge&logo=telegram)](https://t.me/MishaKorzhikTelegram)
+[![Github](https://img.shields.io/badge/GitHub-MishaKorzhik-yellow?style=for-the-badge&logo=github)](https://github.com/mishakorzik)
+[![Github](https://img.shields.io/badge/Twitter-MishaKorzhik-blue?style=for-the-badge&logo=twitter)](https://twitter.com/MishaKorzhik)
+
+## I recommend watching
+
+1.<a href="https://github.com/mishakorzik/qiq">qiq - Useful batch installer</a>
+
+2.<a href="https://github.com/mishakorzik/Gmail-Hack">Gmail-Hack - Easy email hacking</a>
+
+3.<a href="https://github.com/mishakorzik/AdminHack">AdminHack - Hacking bad sites</a>
+
+4.<a href="https://github.com/mishakorzik/Infect">Infect - Easy virus creation</a>
+
+5.<a href="https://github.com/mishakorzik/Free-Proxy">Free-Proxy - Lots of free proxy servers</a>
+
+6.<a href="https://github.com/mishakorzik/IpHack">IpHack - Easy Tracking smartphones</a>
+
+7.<a href="https://github.com/mishakorzik/UserFinder">UserFinder - Find users in social</a>
+
+#### Here are the repositories that I recommend you look at. below are people who liked and forked the repository
+
+-------------
+
+<img src="https://github-readme-stats.vercel.app/api?username=mishakorzik&show_icons=true&theme=default&line_height=25&layout=compact" /></p>
+
+###### Статья носит исследовательский характер. Она адресована специалистам по безопасности и тем, кто собирается ими стать. При ее написании использовались общедоступные базы данных. Ни редакция, ни автор не несут ответственности за неэтичное использование любых упомянутых здесь сведений. Team: He1Zen
+
+## Supporters
+[![Stargazers repo roster for @mishakorzik/Ultra-DDos](https://reporoster.com/stars/mishakorzik/Ultra-DDos)](https://github.com/mishakorzik/Ultra-DDos/stargazers)
+[![Forkers repo roster for @mishakorzik/Ultra-DDos](https://reporoster.com/forks/mishakorzik/Ultra-DDos)](https://github.com/mishakorzik/Ultra-DDos/members)
+

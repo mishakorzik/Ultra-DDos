@@ -21,7 +21,7 @@
 
 ---
 
-> Я не несу ответственности за ваши действия. Скачивая программное обеспечение из этого репозитория, вы соглашаетесь с [лицензией](https://github.com/mishakorzik/AllHackingTools/blob/main/LICENSE).
+> Я не несу ответственности за ваши действия. Скачивая программное обеспечение из этого репозитория, вы соглашаетесь с [лицензией](https://github.com/mishakorzik/Ultra-DDos/blob/main/LICENSE).
 
 ----
 
@@ -39,6 +39,11 @@
 
 * `cd Ultra-DDos`
 * `python2 ddos.py`
+
+#### if you want to know the ip site then command:
+
+* `cd Ultra-DDos`
+* `python SiteIp.py`
 
 -----
 ## Dependencies

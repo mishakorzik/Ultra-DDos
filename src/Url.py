@@ -6,6 +6,8 @@ red='\033[31m'
 green='\033[32m'
 yellow = '\033[93m'
 
+os.system("python logo.py")
+
 target = input(f"{green}Enter Target URL: ")
 target.replace("http://", "")
 target.replace("https://","")

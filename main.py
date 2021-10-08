@@ -4,6 +4,7 @@ import time
 import random
 import sys
 
+os.system("clear")
 os.system("python src/logo.py")
 
 Green="\033[1;33m"

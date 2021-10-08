@@ -38,17 +38,7 @@
 #### Finished you have successfully downloaded Ultra-DDos now to launch!
 
 * `cd Ultra-DDos`
-* `python2 ddos.py`
-
-#### If you want to know the ip site then command:
-
-* `cd Ultra-DDos`
-* `python Url.py`
-
-#### If you want to load the site with clogged site logs then the command:
-
-* `cd Ultra-DDos`
-* `python log-ddos.py
+* `python2 main.py`
 
 -----
 ## Dependencies

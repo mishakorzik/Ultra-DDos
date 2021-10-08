@@ -40,10 +40,15 @@
 * `cd Ultra-DDos`
 * `python2 ddos.py`
 
-#### if you want to know the ip site then command:
+#### If you want to know the ip site then command:
 
 * `cd Ultra-DDos`
 * `python Url.py`
+
+#### If you want to load the site with clogged site logs then the command:
+
+* `cd Ultra-DDos`
+* `python log-ddos.py
 
 -----
 ## Dependencies

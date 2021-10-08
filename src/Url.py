@@ -1,11 +1,19 @@
-
 import socket
+import platform
+import sys
 import os
 
 red='\033[31m'
 green='\033[32m'
 yellow = '\033[93m'
+system = platform.uname()[0]
 
+def cls():
+    if system == 'Windows':
+      os.system("cls")
+    elif system == 'Linux':
+        os.system("clear")
+cls()
 os.system("clear")
 os.system("python src/logo.py")
 

@@ -12,7 +12,7 @@ C = '\033[36m'
 W = '\033[0m'
 
 def ddos():
-	os.system('python src/logo.py')
+	os.system('python logo.py')
 	print('')
 	print(G + "Terminate attack by clicking: CTRL + Z")
 	users = [

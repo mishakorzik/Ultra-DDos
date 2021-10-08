@@ -43,7 +43,7 @@
 #### if you want to know the ip site then command:
 
 * `cd Ultra-DDos`
-* `python SiteIp.py`
+* `python Url.py`
 
 -----
 ## Dependencies

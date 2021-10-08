@@ -2,6 +2,7 @@ import sys
 import os
 import socket
 import random
+import platform
 
 R = '\033[31m'
 G = '\033[32m'
@@ -13,12 +14,19 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-
 bytes = random._urandom(1000)
 bytes1 = random._urandom(1200)
+system = platform.uname()[0]
+
+def cls():
+    if system == 'Windows':
+      os.system("cls")
+    elif system == 'Linux':
+        os.system("clear")
+
+cls()
 
 try:
-   os.system("clear")
    os.system("python src/logo.py")
    ip = raw_input("While IP Target : ")
    port = input("While the Port : ")

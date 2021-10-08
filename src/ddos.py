@@ -19,7 +19,7 @@ bytes1 = random._urandom(1200)
 
 try:
    os.system("clear")
-   os.system("python src/logo.py")
+   os.system("python logo.py")
    ip = raw_input("While IP Target : ")
    port = input("While the Port : ")
    os.system("python3 src/Starter.py")

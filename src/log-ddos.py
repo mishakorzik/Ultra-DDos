@@ -11,6 +11,8 @@ G = '\033[32m'
 C = '\033[36m'
 W = '\033[0m'
 
+os.system("clear")
+
 def ddos():
 	os.system('python src/logo.py')
 	print('')

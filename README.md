@@ -17,7 +17,7 @@
 
 </p>
 
-> Ultra-DDos was created to destroy bad sites, this script is very powerful!
+> Ultra-DDos was created to destroy bad IP Address, this script is very powerful!
 
 ---
 

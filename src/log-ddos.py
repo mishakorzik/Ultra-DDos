@@ -25,6 +25,7 @@ def ddos():
 	os.system('python src/logo.py')
 	print('')
 	print(G + "Terminate attack by clicking: CTRL + Z")
+	print(G + "I recommend using a proxy example: 109.200.155.196:8080")
 	users = [
 		"Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3",
 		"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3835.0 Safari/537.36",

@@ -34,7 +34,7 @@
 * `apt install python2`
 * `apt install python3`
 * `git clone https://github.com/mishakorzik/Ultra-DDos`
-* `python3 -m pip install requests`
+* `pip install requests`
 
 #### Finished you have successfully downloaded Ultra-DDos now to launch!
 

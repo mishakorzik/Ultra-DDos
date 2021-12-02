@@ -35,6 +35,7 @@
 * `apt install python3`
 * `git clone https://github.com/mishakorzik/Ultra-DDos`
 * `pip3 install requests`
+* `pip3 install smtplib`
 
 #### Finished you have successfully downloaded Ultra-DDos now to launch!
 

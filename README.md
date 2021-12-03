@@ -1,7 +1,7 @@
 <img width="99.9%" src="https://raw.githubusercontent.com/mishakorzik/Ultra-DDos/main/src/20210924_095257.png"/>
 
 <p align="center">
-<a href="https://github.com/mishakorzik/AllHackingTools"><img title="Version" src="https://img.shields.io/badge/Version-1.1.0-darkblue?style=for-the-badge&logo="></a>
+<a href="https://github.com/mishakorzik/Ultra-DDos"><img title="Version" src="https://img.shields.io/badge/Version-1.1.0-darkblue?style=for-the-badge&logo="></a>
 <a href="https://github.com/mishakorzik/Ultra-DDos/blob/main/LICENSE"><img title="License" src="https://img.shields.io/badge/License-MPL-blue?style=for-the-badge&logo=Mozilla_Public_License"></a>
 <a href=""><img title="Python" src="https://img.shields.io/badge/Python-3.7-blue?style=for-the-badge&logo=python"></a>
 <a href="https://github.com/mishakorzik"><img title="Report" src="https://img.shields.io/badge/Copyring-2021-blue?style=for-the-badge&logo=github"></a>
